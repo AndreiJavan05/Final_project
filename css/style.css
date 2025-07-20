@@ -1,0 +1,144 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e2f;
+  padding: 1rem 2rem;
+  color: white;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links li a {
+  color: white;
+  transition: color 0.3s ease;
+}
+.nav-links li a:hover {
+  color: #00bcd4;
+}
+
+/* Banner Section */
+.banner {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #00bcd4;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: white;
+  flex-wrap: wrap;
+}
+.hero-content {
+  display: flex;
+  gap: 2rem;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+.hero-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.social-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.social-btn {
+  background-color: #eee;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: inline-block;
+  color: #333;
+  font-size: 1.2rem;
+  transition: 0.3s ease;
+}
+.social-btn:hover {
+  background-color: #00bcd4;
+  color: white;
+}
+
+/* Projects Section */
+.projects {
+  padding: 4rem 2rem;
+  background-color: #f0f0f0;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.project-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Contact Section */
+.contact {
+  padding: 4rem 2rem;
+}
+.contact form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact input, .contact textarea {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact button {
+  background-color: #00bcd4;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact button:hover {
+  background-color: #0097a7;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #1e1e2f;
+  color: white;
+}
